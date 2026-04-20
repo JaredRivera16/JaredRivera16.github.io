@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Perfil | Estudiante de Software</title>
+    
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Estilos de la tarjeta de perfil */
+        .card-perfil {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 450px;
+            padding: 40px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Estilos de la foto de perfil */
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Hace la foto circular */
+            object-fit: cover; /* Asegura que la imagen no se deforme */
+            border: 5px solid #007bff; /* Un borde azul */
+            margin-bottom: 20px;
+        }
+
+        /* Estilos de los textos */
+        h1 {
+            color: #333;
+            margin: 10px 0;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #007bff;
+            font-weight: normal;
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        p.bio {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos de los enlaces de contacto */
+        .contacto-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn-contacto {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-contacto:hover {
+            background-color: #555;
+        }
+
+        .btn-github {
+            background-color: #24292e;
+        }
+        .btn-github:hover {
+            background-color: #444;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Mi perfil</h1>
-    <h1>soy estudiante de software</h1>
+    <div class="card-perfil">
+        
+        <img src="nombre-de-tu-foto.jpg" alt="Foto de perfil de Juan Pérez" class="foto-perfil">
+
+        <h1>Tu Nombre Completo</h1>
+        <h2>Estudiante de Ingeniería de Software</h2>
+
+        <p class="bio">
+            Apasionado por el desarrollo de aplicaciones web y la resolución de problemas lógicos. 
+            Actualmente enfocado en aprender tecnologías como HTML, CSS, JavaScript y buscando mi primera oportunidad en la industria.
+        </p>
+
+        <div class="contacto-links">
+            <a href="mailto:tu-correo@email.com" class="btn-contacto">Email</a>
+            <a href="https://github.com/tu-usuario" class="btn-contacto btn-github" target="_blank">GitHub</a>
+        </div>
+    </div>
+
 </body>
 </html>
